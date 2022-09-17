@@ -1,0 +1,496 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Coffee Drinks</title>
+
+    <style>
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        
+
+        :target{
+            background-color: lightblue;
+        }
+
+      
+
+        
+
+        table,
+        th,
+        td {
+            border: 2px solid var(--FONT-COLOR);
+            border-spacing: 0;
+            height: 40px;
+        }
+
+        td{
+            color: var(--FONT-COLOR);
+            font-weight: 500;
+            font-family: Roboto , Arial;
+            padding: 10px;
+        }
+
+        .drink {
+            width: 120px;
+            height: 10px;
+            padding: 4px;
+            ;
+        }
+
+        .prep {
+            width: 140px;
+            height: 20px;
+        }
+
+        .temp {
+            width: 110px;
+        }
+
+        .ing {
+            width: 330px;
+        }
+
+        .det {
+            width: 500px;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        thead {
+            background-color: maroon;
+        }
+        @media (prefers-color-scheme: dark) {
+            thead {
+                background-color: #222;
+            }
+        }
+
+        tbody {
+            background-color: papayawhip
+        }
+
+        @media (prefers-color-scheme: dark) {
+            tbody {
+                background-color: gray;
+            }
+        }
+
+        
+
+        p {
+            margin: 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: 900px;
+
+
+        }
+
+        h3 {
+            margin: 7px;
+            color: var(--HEADING2-COLOR);
+            font-size: 30px;
+        }
+
+        a img {
+            
+            height: 300px;
+            width: 200px;
+            margin: 10px 20px 10px 10px;
+        }
+
+        #cm {
+            height: 200px;
+        }
+       
+
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color: var(--PAGE-LINK-COLOR);
+        }
+
+        a:hover {
+            color: var(--NAV-HOVER-COLOR);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :target{
+                background-color: #333;
+            }
+        }
+
+        p{
+            font-size:clamp(0.8rem , 0.1vh , 0.4rem);
+        }
+
+
+       
+    </style>
+
+<link rel="stylesheet" href="./Coffee-Styles.css">
+
+
+</head>
+
+<body>
+
+    <h1 id="h1">All About Coffee <br>
+
+        <nav>
+            <a class="header-links" href="./index.html">Home</a>
+            <a class="header-links" href="./roasting.html">Roasting</a>
+            <a class="header-links" href="./brewing.html">Brewing</a>
+            <a class="header-links" href="./grinding.html">Grinding</a>
+            <a class="header-links" href="./drinks.html">Drinks</a>
+            <a class="header-links" href="./survey.html">Survey</a>
+            <a class="header-links" href="./about.html">About</a>
+        </nav>
+
+    </h1>
+    <br>
+    <h2>Various Kinds of Coffee</h2>
+
+
+    <table>
+
+        <thead>
+            <tr>
+                <th class="drink">Drinks</th>
+                <th class="prep">Preparation</th>
+                <th class="temp">Temperature</th>
+                <th class="ing">Ingredients</th>
+                <th class="det">Details</th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+            <tr>
+                <td> <a href="#cappucino">Cappuccino</a></td>
+                <td>Espresso</td>
+                <td>Hot</td>
+                <td>Equal amount of espresso and steamed milk</td>
+                <td>Pour the espresso through the milk and serve</td>
+            </tr>
+
+            <tr>
+                <td><a href="#latte">Latte</a></td>
+                <td>Espresso</td>
+                <td>Hot</td>
+                <td>2/3 or more steamed milk and espresso</td>
+                <td>Pour the espresso through the milk and serve.</td>
+            </tr>
+
+            <tr>
+                <td><a href="#macchiato">Macchiato</a></td>
+                <td>Espresso</td>
+                <td>Hot</td>
+                <td>Espresso with just a "mark" of steamed milk</td>
+                <td>Add milk to the expresso after pressing.</td>
+            </tr>
+
+            <tr>
+                <td> <a href="#iced-coffee">Iced Coffee</a></td>
+                <td>Drip or french press</td>
+                <td>Cold</td>
+                <td>Coffee poured over ice</td>
+                <td>Can be sweetened with sugar or creme.</td>
+            </tr>
+
+            <tr>
+                <td><a href="#frappe`">Frappé</a></td>
+                <td>Strong instant coffee</td>
+                <td>Cold</td>
+                <td>Instant coffee, water and milk </td>
+                <td>Shake to create a foam, then pour over ice and serve. A specialty in Greece</td>
+
+
+            </tr>
+
+            <tr>
+                <td><a href="#flat-white">Flat white</a></td>
+                <td>Espresso</td>
+                <td>Hot</td>
+                <td>"1/3 espresso and 2/3 steamed milk</td>
+                <td>A specialty in Australia and New Zealand. The foam is often decorated with a motif.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+
+    <section id="cappucino">
+        <h3 id="cap">Cappuccino</h3> <br>
+
+        <a href="./images/cappacciuno.jpg"> <img src="./images/cappacciuno.jpg" alt="cappacciuno"></a>
+
+        <p><br>
+            Variations of the drink involve the use of cream instead of milk,
+            using non-dairy milk substitutes and flavoring with cinnamon or chocolate
+            powder.It is typically smaller in volume than a caffè latte, with
+            a thicker layer of microfoam.</p>
+
+        <p>The name comes from the Capuchin friars, referring to the colour of their habits,
+            and in this context referring to the colour of the beverage when milk is added
+            in small portion to dark, brewed coffee (today mostly espresso). The physical
+            appearance of a modern cappuccino with espresso créma and steamed milk is a
+            result of a long evolution of the drink.</p>
+
+        <p>The Viennese bestowed the name "Kapuziner", possibly in the 18th century, on a
+            version that included whipped cream and spices of unknown origin. The Italian
+            cappuccino was unknown outside Italy until the 1930s, and seems to be born out
+            of Viennese-style cafés in Trieste and other Italian areas in Austria-Hungary
+            through the Kapuziner coffee in the early 20th century. The drink spread from
+            Trieste, the main coffee port in Central Europe, throughout Italy, especially
+            after World War I and later worldwide, and can be found at a number of
+            establishments</p>
+
+        <p>Outside of Italy, cappuccino is a coffee drink that today is typically composed
+            of a single espresso shot and hot milk, with the surface topped with foamed milk.
+            Cappuccinos are most often prepared with an espresso machine. The espresso is
+            poured into the bottom of the cup, followed by a similar amount of hot milk,
+            which is prepared by heating and texturing the milk using the espresso machine
+            steam wand. The top third of the drink consists of milk foam; this foam can be
+            decorated with artistic drawings made with the same milk, called latte art.
+        </p>
+
+        <p>In a traditional cappuccino, as served in Europe and artisan coffee houses in
+            the United States, the total of espresso and milk/foam make up between
+            approximately 150 and 180 ml (5 and 6 imp fl oz; 5 and 6 US fl oz). Commercial
+            coffee restaurant chains in the US more often serve the cappuccino as a 360 ml
+            (13 imp fl oz; 12 US fl oz) drink or larger. In Italy, a cappuccino consists
+            of 25 ml (1 imp fl oz; 1 US fl oz) of espresso; the rest of the cup is filled
+            with equal parts of milk and foam. Outside of Italy, the ratios of espresso,
+            milk, and foam typically equal 1/3 each.</p>
+
+    </section>
+
+    <section id="latte">
+        <br>
+        <h3>Latte</h3>
+
+        <a href="./images/latte.jpg"> <img src="./images/latte.jpg" alt="latte"></a>
+        <p>Caffè latte, often shortened to just latte in English, is a coffee beverage
+            of Italian origin made with espresso and steamed milk. Variants include the
+            chocolate-flavored mocha or replacing the coffee with another beverage base
+            such as masala chai (spiced Indian tea), mate, matcha, turmeric, or rooibos;
+            other types of milk, such as soy milk or almond milk, are also used.</p>
+
+        <p>The term comes from the Italian caffellatte or caffè latte, from caffè e
+            latte, literally "coffee and milk"; in English orthography either or both
+            words sometimes have an accent on the final e (a hyperforeignism in the
+            case of *latté, or to indicate it is pronounced, not the more-common silent
+            final e of English). In northern Europe and Scandinavia, the term café au
+            lait has traditionally been used for the combination of espresso and milk.
+            In France, café latte is from the original name of the beverage (caffè
+            latte); a combination of espresso and steamed milk equivalent to a
+            "latte" is in French called grand crème and in German Milchkaffee or
+            (in Austria) Wiener Melange.</p>
+
+        <p>Coffee and milk have been part of European cuisine since the
+            seventeenth century. Caffè e latte, Milchkaffee, café au lait,
+            and café con leche are domestic terms of traditional ways of drinking
+            coffee, usually as part of breakfast in the home. Public cafés in
+            Europe and the USA seem to have no mention of the terms until the
+            twentieth century, although Kapuziner is mentioned in Austrian
+            coffee houses in Vienna and Trieste in the second half of 1700s
+            as "coffee with cream, spices, and sugar" (being the origin of
+            the Italian cappuccino).</p>
+
+        <p>According to the Oxford English Dictionary, the term caffè e
+            latte was first used in English in 1867 by William Dean Howells
+            in his essay "Italian Journeys".[6] Kenneth Davids maintain
+            s that "...breakfast drinks of this kind have existed in Europe
+            for generations, but the (commercial) caffè version of
+            this drink is an American invention".[7][dubious – discuss]
+            The French term café au lait was used in cafés in several
+            countries in western continental Europe from 1900 onward,
+            however, the term café crème was used in France for coffee
+            with milk or crea</p>
+    </section>
+    <br>
+    <section id="macchiato">
+        <h3>Macchiato</h3>
+
+        <a href="./images/caffe macchiato.jpg"><img src="./images/caffe macchiato.jpg" alt="caffe-macchiato"
+                id="cm"></a>
+
+        <p>Caffè macchiato , sometimes called espresso macchiato, is an espresso
+            coffee drink with a small amount of milk, usually foamed. In Italian,
+            macchiato means "stained" or "spotted", so the literal translation of
+            caffè macchiato is "stained coffee" or "marked coffee".</p>
+
+        <p>The caffè macchiato has the highest ratio of espresso to milk of any drink
+            made with those ingredients. The intent is that the milk moderates, rather
+            than overwhelms, the taste of the coffee while adding a touch of sweetnes
+            s. The drink is typically prepared by pouring a small amount of steamed
+            milk directly into a single shot of espresso.[4] One recipe calls for 5–10 g
+            (1–2 teaspoons) of milk heated to 60–66 °C (140–150 °F).
+        </p>
+
+        <p>The origin of the name "macchiato" stems from baristas needing to show the serving
+            waiters the difference between an espresso and an espresso with a tiny bit of milk
+            in it; the latter was "marked". The idea is reflected in the Portuguese name for
+            the drink: café pingado, meaning coffee with a drop.</p>
+    </section>
+    <br>
+    <section id="iced-coffee">
+        <h3>Iced Coffee</h3>
+
+        <a href="./images/ice coffee.jpg"><img src="./images/ice coffee.jpg" alt="iced-coffee"></a>
+
+        <p>Iced coffee is a coffee beverage served cold. It may be prepared either
+            by brewing coffee normally (i.e. carafe, French press, etc.) and then
+            serving it over ice or in cold milk, or by brewing the coffee cold. In
+            hot brewing, sweeteners and flavoring may be added before cooling, as
+            they dissolve faster. Iced coffee can also be sweetened with pre-dissolved
+            sugar in water.</p>
+
+        <p>Pre-packaged iced coffee is available as a grocery item in several countries,
+            though without ice. Iced coffee is also regularly available in most coffee
+            shops. Iced coffee is generally brewed at a higher strength than normal
+            coffee, since it is diluted by the melting ice.
+        </p>
+
+        <p>Mazagran, a cold, sweetened coffee beverage that originated in Algeria
+            circa 1840, has been described by locals as "the original iced coffee".
+            It was prepared with coffee syrup and cold water.
+            Frozen coffee beverages, similar to slush, are
+            documented in the 19th century. Similar is the Italian granita al caffè.
+            Coffee brewed then chilled with ice, called "iced coffee", appears in menus
+            and recipes in the late 19th century.
+            Iced coffee was popularized by a marketing campaign of the Joint Coffee
+            Trade Publicity Committee of the United States in 1920. Much later,
+            it was marketed by chain outlets like Burger King, Dunkin' Donuts and Starbucks
+        </p>
+
+        <p>Iced coffee may be served already chilled, or poured hot over ice. Because
+            sugar does not dissolve readily into cold liquids, it must be added either
+            directly to the hot base, or to the finished product in the form of syrup.</p>
+
+        <p>Long popular among coffee enthusiasts in the U.S., iced coffee is quickly gaining
+            popularity among the general consumer audience as evidenced by the fact that it
+            is available in mass food franchises and sold bottled in grocery stores. Iced
+            coffee is prepared many different ways, including cold brew coffee and chilled
+            conventional coffe</p>
+
+
+    </section>
+    <br>
+
+    <section id="frappe`">
+        <h3>Frappé</h3>
+
+        <a href="./images/frappe.jpg"><img src="./images/frappe.jpg" alt="frappe"></a>
+
+        <p>The name frappé comes from French, where it describes drinks chilled with
+            ice. Beginning in the 19th century, a variety of cold coffee drinks named
+            café frappé (à la glace) are documented, some similar to slushes,
+            others more like iced coffee.</p>
+
+        <p>A frappé coffee, Greek frappé, Nescafé frappé, or just frappé
+            is a Greek iced coffee drink made
+            from instant coffee (generally, spray-dried Nescafé), water, sugar,
+            and milk. The word is often written frappe (without an accent).
+            The frappé was invented through experimentation by Dimitris Vakondios,
+            a Nescafe representative, in 1957 in Thessaloniki. Frappés are among
+            the most popular forms of coffee in Greece and Cyprus and have become a
+            hallmark of postwar outdoor Greek coffee culture.</p>
+
+        <p>The Greek version of café frappé, using instant coffee, was invented in 1957
+            at the Thessaloniki International Fair. A representative of the Nestlé company,
+            Giannis Dritsas, was exhibiting a new product for children, a chocolate beverage
+            produced instantly by mixing it with milk and shaking it in a shaker. Dritsas'
+            employee Dimitris Vakondios was looking for a way to have his usual instant
+            coffee during his break but could not find any hot water, so, he mixed the
+            coffee with cold water and ice cubes in a shaker</p>
+
+        <p>This improvised experiment established the frappé which quickly grew in popularity
+            in Greece. Nestlè capitalized on the drink with intense marketing campaigns
+            in the 1980s that broadened the drink's popularity and left the brand name
+            Nescafé inextricably linked with the frappé. While today the drink is
+            usually simply called a 'frappé' in Greece, in the past it was often
+            called a 'Nescafé frappé'.
+        </p>
+
+        <p>A frappé can be made with a cocktail shaker or, more commonly today, with an
+            electric milk frother or milkshake machine. First, instant coffee
+            (traditionally Nescafe), sugar (optionally), and a little water are shaken
+            or blended together until a thick foam is made. This is poured into the
+            serving glass and ice cubes, cold water, and, optionally, milk (traditionally
+            evaporated milk) are added to it. The drink is almost always served with a
+            drinking straw, as the thick foam which forms on top is considered
+            unpleasantly bitter by many.
+        </p>
+
+        <p></p>
+    </section>
+
+    <br>
+
+    <section id="flat-white">
+        <h3>Flat white</h3>
+
+        <a href="./images/flat-white.jpg"><img src="./images/flat-white.jpg" alt="flat-white"></a>
+
+        <p>A flat white is a coffee drink consisting of espresso with microfoam
+            (steamed milk with small, fine bubbles and a glossy or velvety consistency).
+            It is comparable to a latte, but smaller in volume and with less microfoam,
+            therefore having a higher proportion of coffee to milk, and milk that is more
+            velvety in consistency allowing the espresso to dominate the flavour, while
+            being supported by the milk.
+        </p>
+
+        <p>A flat white is generally served in a ceramic cup with saucer. Milk is frothed
+            and foamy as it would be for a latte but held back to around 20 mm (0.79 in)
+            of microfoam, creating a meniscus. Differences in the size of the foam layer
+            differ between regions, with some preferring as little as 1mm. Key to the
+            beverage is the crema being coaxed into the meniscus resulting in a uniform
+            dark brown colour across the top of the beverage. Allowing the beverage to
+            stand before drinking enhances the experience as the meniscus thickens and
+            adds texture to each sip, resulting in distinct sip rings/tide marks as
+            the beverage is consumed.
+        </p>
+
+        <p>According to a survey of industry commentators a flat white has several defining
+            characteristics, chief among which is a thin layer of velvety microfoam
+            (hence the 'flat' in flat white), as opposed to the significantly thicker
+            layer of foam in a traditional cappuccino.
+        </p>
+
+        <p>There is a reference to a "flat white coffee" in the 1962 British film Danger
+            by My Side, although it is not clear that this refers to the modern drink.
+            Episode 123 of Australian soap opera The Young Doctors a character asks for
+            two flat whites in the restaurant Bunny's Place - set in Sydney, this was
+            filmed / broadcast in 1976–1977.[citation needed] The earliest documented
+            references to the modern beverage date back to Australia in the mid-1980s.
+            A review of the Sydney café, Miller's Treat in May 1983 referred to their
+            "flat white coffee". Another Sydney newspaper article in April 1984
+            satirised a vogue for caffe latte, stating that "caffe latte translates
+            as flat white". At Moors Espresso Bar in Sydney, Alan Preston added the
+            beverage to his permanent menu in 1985. Preston claimed he had imported
+            the idea to Sydney from his native Queensland, where cafés in the 1960s
+            and 1970s had frequently offered "White Coffee – flat". Other documented
+            references include the Parliament House cafeteria in Canberra putting up
+            a sign in January 1985 saying "flat white only" during a seasonal problem
+            with milk cows that prevented the milk froth from forming.
+
+        </p>
+    </section>
+
+    
+
+
+
+</body>
+
+</html>

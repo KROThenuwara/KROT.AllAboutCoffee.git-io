@@ -1,0 +1,119 @@
+:root {
+    /* || COLORS*/
+
+    --FONT-COLOR: #000;
+    --HEADING-BGCOLOR: #a52a2a;
+    --HEADING2-COLOR: #a52a2a;
+    --NAV-COLOR: #FFF;
+    --LINK-COLOR: #00F;
+    --LINK-HOVER-COLOR: #a52a2a;
+    --PAGE-LINK-COLOR: #3a1b78;
+    --NAV-HOVER-COLOR: #000;
+    --NAV-BGCOLOR: #a52a2a;
+    --NAV-COLOR: #f5f5f5;
+    --JS-BGCOLOR: #d2b48c;
+    --BGCOLOR : WHITE;
+    --TITLE-COLOR : #000;
+
+    /* || SIZES*/
+
+    --NAV-FONT-SIZE :  font-size: clamp(0.6rem , 1.8vh , 0.2rem);
+    --HEADING2-SIZE : 40px;
+    --HEADING-SIZE : 60px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --FONT-COLOR: #f5f5f5;
+        --HEADING-BGCOLOR: #a52aFF;
+        --HEADING2-COLOR: #8badfcad;
+        --NAV-COLOR: #000;
+        --LINK-COLOR: #00F;
+        --LINK-HOVER-COLOR: #a52a2a;
+        --PAGE-LINK-COLOR: #3a41c6;
+        --NAV-HOVER-COLOR: rgba(25, 0, 169, 0.939);
+        --NAV-BGCOLOR: #0a013e;
+        --NAV-COLOR: #f5f5f5;
+        --JS-BGCOLOR: #5a4427;
+        --BGCOLOR : #333;
+        --TITLE-COLOR : #000
+        
+    }
+}
+
+h2 , h4 , p , img , div , li{
+    margin-left: 10px ;
+    margin-right: 10px;
+}
+
+nav {
+    font-size: 0px;
+    position: absolute;
+    top: 72px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--NAV-BGCOLOR);
+    
+
+}
+
+nav a:link,
+nav a:visited {
+    
+    font-size: var(--NAV-FONT-SIZE);
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0px;
+    margin: 5px 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--NAV-COLOR);
+    font-size:  clamp(1.3rem , 2.7vh , 1.8rem);
+    text-decoration: none;
+    
+}
+
+nav a:hover {
+    background-color: var(--NAV-HOVER-COLOR);
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    background-color: var(--BGCOLOR);
+    color: var(--FONT-COLOR);
+    margin-bottom: 20%;
+}
+
+h1 {
+    font-size: var(--HEADING-SIZE);
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;
+    margin: 0;
+    background-image: url(./images/coffee-beans4.jpg);
+    width: 100%;
+    height: 100px;
+    color: black;
+}
+
+
+
+h2{
+    font-size: var(--HEADING2-SIZE);
+    color: var(--HEADING2-COLOR);
+
+}
+
+p , h4 {
+    font-size:clamp(0.8rem , 0.1vh , 0.6rem  ) ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}

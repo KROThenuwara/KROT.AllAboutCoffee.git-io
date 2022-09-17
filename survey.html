@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Coffee Survey</title>
+
+    <style>
+        body {
+            margin: 0;
+            width: 100%;
+            color: var(--FONT-COLOR);
+            background-color: var(--BGCOLOR);
+        }
+
+
+        h1 {
+            font-size: 60px;
+            font-family: 'Brush Script MT', cursive;
+            text-align: center;
+            margin: 0;
+            background-image: url(./images/coffee-beans4.jpg);
+            width: 100%;
+            height: 100px;
+            color: black;
+        }
+
+        
+
+        h2 {
+            margin: 7px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color: var(--HEADING2-COLOR);
+            font-size: 40px;
+        }
+
+        textarea {
+            vertical-align: -160px;
+            
+        }
+
+        label {
+            margin: 10px 5px 5px 20px;
+
+
+        }
+
+        fieldset {
+            width: 880px;
+            display: inline-block;
+        }
+
+        #submit {
+            width: 100px;
+            height: 30px;
+            font-size: 20px;
+            text-align: center;
+            padding: 2px 17px;
+        }
+
+        legend{
+            font-size: clamp(1rem , 2.2vh , 1.7rem);
+            margin-bottom: 30px;
+        }
+
+        label{
+            font-size:  clamp(1rem , 5vh , 1.4rem);
+        }
+
+        
+
+        select,
+        input,
+        textarea {
+            margin: 10px 5px 5px 40px;
+            vertical-align: middle;
+        }
+
+        @media (prefers-color-scheme: dark) {
+
+            select,
+            input,
+            textarea {
+                background-color: #222;
+                color: whitesmoke;
+            }
+
+
+        }
+
+        div {
+            margin: 20px 5px 5px 20px;
+            font-size:  clamp(1rem , 5vh , 1.4rem);
+        }
+
+        .SEND{
+            background-color: blue;
+            color:aliceblue ;
+            border-radius: 20px;
+
+        }
+
+        .SEND:hover{
+            color:rgba(240, 248, 255, 0.517);
+            cursor: pointer;
+        }
+
+    </style>
+    <link rel="stylesheet" href="./Coffee-Styles.css">
+
+
+</head>
+
+<body>
+
+    <h1 id="h1">All About Coffee <br>
+
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./roasting.html">Roasting</a>
+            <a href="./brewing.html">Brewing</a>
+            <a href="./grinding.html">Grinding</a>
+            <a href="./drinks.html">Drinks</a>
+            <a href="./survey.html">Survey</a>
+            <a href="./about.html">About</a>
+        </nav>
+
+    </h1> <br>
+
+    <h2>Coffee Survey</h2>
+
+    <form action="./index.html">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for='name'>Your Name:</label>
+            <input type="text" name="Your Name" maxlength="64" minlength="3" required id="name"
+                placeholder="Enter Your Full Name">
+            <br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" name="Email Address" required id="email" placeholder="Enter Your Email Address">
+            <br>
+        </fieldset>
+
+
+
+
+        <div>Tell us your coffee preparation methods:</div>
+        <textarea placeholder="Enter your Coffee Preparation methods here." id="method" cols="100" rows="10"></textarea>
+        <br>
+
+        <label for="yes">Do you grind your own beans?</label>
+        <input type="radio" id="yes" value="Yes" name="yes">Yes
+        <input type="radio" name="yes" id="yse" value="No">No
+        <br>
+
+        <label for="sugar">How do you drink your coffee?</label>
+        <input type="checkbox" value="with sugar" name="sugar" id="sugar">with sugar
+        <input type="checkbox" name="sugar" id="sugar" value="with cream">with cream
+        <br>
+
+        <label for="drink" id="sel">What is your favorite coffee drink?</label>
+        <select name="drink" id="drink">
+            <option value="drip coffee">drip coffee</option>
+            <option value="french press">french press</option>
+            <option value="espresso">espresso</option>
+            <option value="latte">latte</option>
+            <option value="flavored">flavored</option>
+        </select>
+        <br>
+        <br>
+
+        <input class="SEND" type="submit" value="Send" id="submit">
+
+
+
+        <br>
+        <br>
+        <br>
+
+
+
+    </form>
+
+
+
+
+</body>
+
+</html>
